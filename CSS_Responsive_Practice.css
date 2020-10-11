@@ -1,0 +1,34 @@
+/*タブレット*/
+@media all and (max-width: 1000px) {
+  .menu-wrapper .container .contents{
+    height: 60px;
+  }
+
+  .menu-wrapper .container .contents li{
+    width:25%;
+  }
+}
+
+/*モバイル*/
+@media all and (max-width: 670px) {
+  header .container a{
+    display: none;
+  }
+
+  header .container .fa-bars{
+    display: block;
+    padding: 0 5px;
+  }
+
+  header .container .fa-bars:hover{
+    background-color: black;
+  }
+
+  .menu-wrapper .container .contents{
+    height: 90px;
+  }
+
+  .menu-wrapper .container .contents li{
+    width:50%;
+  }
+}
