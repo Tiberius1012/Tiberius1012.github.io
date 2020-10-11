@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML_Practice</title>
+    <link rel="stylesheet" href="CSS_Practice.css">
+    <link rel="stylesheet" href="CSS_Responsive_Practice.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <script src="JS_Practice.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <i class="fas fa-dharmachakra"></i>
+        <h1>高野山へようこそ！</h1>
+        <i class="fas fa-bars"></i>
+        <a>新規登録</a>
+        <a>ログイン</a>
+      </div>
+    </header>
+    <div class="top-wrapper">
+      <div class="container">
+        <p>弘法大師空海が築いた<br>一大密教聖地</p>
+        <h1>高野山真言宗<br>　総本山金剛峰寺</h1>
+        <p>その魅力を余すところなく<br>ご紹介します</p>
+      </div>
+    </div>
+    <div class="menu-wrapper">
+      <div class="container">
+        <ul class="contents">
+          <li>概要</li>
+          <li>歴史</li>
+          <li>年間行事</li>
+          <li>ギャラリー</li>
+          <li>アクセス</li>
+          <li>お問い合わせ</li>
+        </ul>
+      </div>
+    </div>
+    <main>
+      <section>
+        <article>
+          <h2>―悠久の祈りを超えて―</h2>
+          <p>金剛峯寺（こんごうぶじ）は、和歌山県伊都郡高野町高野山にある高野山真言宗総本山の寺院。</p>
+          <p>高野山は、和歌山県北部、周囲を1,000m級の山々に囲まれた標高約800mの平坦地に位置する。100か寺以上の寺院が密集する、日本では他に例を見ない宗教都市である。京都の東寺と共に、真言宗の宗祖である空海（弘法大師）が修禅の道場として開創し、真言密教の聖地、また、弘法大師入定信仰の山として、21世紀の今日も多くの参詣者を集めている。2004年（平成16年）7月に登録されたユネスコの世界遺産『紀伊山地の霊場と参詣道』の構成資産の一部。</p>
+          <p>出典: フリー百科事典『ウィキペディア（Wikipedia）』</p>
+        </article>
+        <figure>
+          <img src="./DVC00006.JPG" class="kukai">
+          <figcaption>真言宗開祖<br>弘法大師空海<br>（893年～2020年）</figcaption>
+        </figure>
+      </section>
+    </main>
+    <div class="submit-wrapper">
+      <div class="container">
+        <form action="#" method="POST">
+          <h1>Let's me know your information!</h1>
+          <ol>
+            <li>
+              <!--text-->
+              <section class="name">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+              </section>
+            </li>
+
+            <li>
+              <!--password-->
+              <section class="password">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+              </section>
+            </li>
+
+            <li>
+              <!--number-->
+              <section class="phone">
+                <label for="phone">Phone number</label>
+                <input type="number" id="phone" name="phone" value="114514">
+              </section>
+            </li>
+
+            <li>
+              <!--radio-->
+              <section class="male">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+              </section>
+            </li>
+
+            <li>
+              <!--checkbox-->
+              <section class="subscription">
+                <label for="subscription">Get an E-mail</label>
+                <input type="checkbox" id="subsciription" name="subscription" value="yes">
+              </section>
+            </li>
+
+            <li>
+              <!--select-->
+              <section class="country">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="United State">United State</option>
+                  <option value="China">China</option>
+                  <option value="Japan">Japan</option>
+                </select>
+              </section>
+            </li>
+
+            <li>
+              <!--datalist-->
+              <section class="spot">
+                <label for="spot">Which spot do you like?</label>
+                <input type="text" id="spot" name="spot" list="spots">
+                <datalist id="spots">
+                  <option value="Todaiji-Temple"></option>
+                  <option value="Horyuji-Temple"></option>
+                  <option value="Kongobuji-Temple"></option>
+                </datalist>
+              </section>
+            </li>
+
+            <li>
+              <!--range-->
+              <section class="evaluate">
+                <label for="evaluate">How was this site?</lable>
+                <span>Terrible</span>
+                <input type="range" id="evaluate" name="evaluate" max="5" min="1" step="1">
+                <span>Perfect</span>
+              </section>
+            </li>
+
+            <li>
+              <!--textarea-->
+              <section class="etc">
+                <label for="etc">Do you have any other questions?</label>
+                <textarea id="etc" name="etc" rows="5" cols="30px"></textarea>
+              </section>
+            </li>
+
+            <!--submit-->
+            <section class="submit">
+              <input type="submit" id="submit" value="OK!!">
+            </section>
+          </ol>
+        </form>
+      </div>
+    </div>
+    <div class="grid-wrapper">
+      <div class="container">
+        <h2>掲示板</h2>
+        <div class="grid">
+          <div class="box a">A</div>
+          <div class="box b">B</div>
+          <div class="box c">C</div>
+          <div class="box d">D</div>
+          <div class="box e">E</div>
+          <div class="box f">F</div>
+          <div class="box g">G</div>
+        </div>
+      </div>
+      <div class="container2">
+        <h2>掲示板２</h2>
+        <div class="grid2">
+          <div class="box2 h">H</div>
+          <div class="box2 i">I</div>
+          <div class="box2 j">J</div>
+          <div class="box2 k">K</div>
+          <div class="box2 l">L</div>
+          <div class="box2 m">M</div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <h2>年間スケジュール</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>月</th>
+              <th>行事</th>
+              <th>参加者</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="month">4月</td>
+              <td class="event">お花見</td>
+              <td class="paricipant">内閣総理大臣</td>
+            </tr>
+            <tr>
+              <td class="month">5月</td>
+              <td class="event">メーデー</td>
+              <td class="paricipant">日本共産党書記長</td>
+            </tr>
+            <tr>
+              <td class="month">6月</td>
+              <td class="event">お梅見</td>
+              <td class="paricipant">青木ウメさん（97）</td>
+            </tr>
+            <tr>
+              <td class="month">7月</td>
+              <td class="event">海開き</td>
+              <td class="paricipant">シルバーサーファー</td>
+            </tr>
+            <tr>
+              <td class="month">8月</td>
+              <td class="event">稲刈り</td>
+              <td class="paricipant">天皇陛下</td>
+            </tr>
+            <tr>
+              <td class="month">9月</td>
+              <td class="event">お月見</td>
+              <td class="paricipant">かぐや姫</td>
+            </tr>
+            <tr>
+              <td class="month">10月</td>
+              <td class="event">焼き芋</td>
+              <td class="paricipant">薩摩芋御用掛　青木昆陽</td>
+            </tr>
+            <tr>
+              <td class="month">11月</td>
+              <td class="event">紅葉狩り</td>
+              <td class="paricipant">X JAPAN</td>
+            </tr>
+            <tr>
+              <td class="month">12月</td>
+              <td class="event">クリスマス</td>
+              <td class="paricipant">イエス・キリスト（救世主）</td>
+            </tr>
+            <tr>
+              <td class="month">1月</td>
+              <td class="event">お正月</td>
+              <td class="paricipant">天皇陛下</td>
+            </tr>
+            <tr>
+              <td class="month">2月</td>
+              <td class="event">バレンタイン</td>
+              <td class="paricipant">天皇陛下</td>
+            </tr>
+            <tr>
+              <td class="month">3月</td>
+              <td class="event">卒業式</td>
+              <td class="paricipant">長渕剛</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </footer>
+    <p id="java">java</p>
+    <script type="text/javascript">
+      let java = document.getElementById("java");
+      java.onclick = ()=>{
+        alert("java click");
+      }
+    </script>
+    <script type="text/javascript" src="JS_Practice.js"></script>
+  </body>
+</html>
